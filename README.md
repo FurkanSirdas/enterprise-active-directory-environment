@@ -95,3 +95,104 @@ atlas.local
 ## Author
 
 Furkan Sirdas
+
+
+---
+
+# Turkish Description (Türkçe Açıklama)
+
+## Proje Özeti
+
+Bu proje, küçük ölçekli bir şirket altyapısını simüle etmek amacıyla oluşturulmuş bir Windows Server Active Directory laboratuvar ortamıdır.
+
+Bu ortam içerisinde:
+
+- Active Directory Domain Services (AD DS)
+- DNS yapılandırması
+- Organizational Unit (OU) yapısı
+- Departman bazlı güvenlik grupları
+- Group Policy Objects (GPO)
+- Ortak ağ sürücüleri
+- NTFS izinleri
+- Access-Based Enumeration
+- Merkezi kullanıcı ve yetki yönetimi
+
+uygulanmıştır.
+
+---
+
+## Kullanılan Teknolojiler
+
+- Windows Server 2016
+- Windows 10 Client
+- Active Directory
+- DNS
+- Group Policy Management
+- SMB File Sharing
+- NTFS Permissions
+- Oracle VirtualBox
+
+---
+
+## Gerçekleştirilen Yapılar
+
+### Organizational Unit (OU) Yapısı
+- Finance
+- HR
+- Interns
+- IT
+
+### Güvenlik Grupları
+- Finance_Users
+- HR_Users
+- Interns_Users
+- IT_Admins
+
+### Group Policy Yapıları
+- IT_Admins grubuna otomatik local administrator yetkisi verilmesi
+- Ortak ağ sürücüsünün otomatik bağlanması
+- Merkezi kullanıcı ve yapılandırma yönetimi
+
+### Dosya Sunucusu Yapısı
+- Departman bazlı ortak klasörler
+- Yetki bazlı erişim kontrolü
+- Access-Based Enumeration ile yetkisiz klasörlerin gizlenmesi
+
+---
+
+## Ağ Yapısı
+
+| Cihaz | IP Adresi |
+|---|---|
+| Domain Controller | 192.168.111.17 |
+| Windows Client | 192.168.111.18 |
+
+Etki Alanı:
+
+```text
+atlas.local
+```
+---
+
+## Laboratuvar Ortamı
+
+- Oracle VirtualBox kullanılarak sanallaştırılmıştır
+- Windows Server Domain Controller olarak yapılandırılmıştır
+- Windows 10 istemcisi domaine dahil edilmiştir
+
+---
+
+## Gelecekte Eklenebilecek Yapılar
+
+- DHCP Server
+- WSUS
+- PowerShell Otomasyonu
+- Backup Sistemi
+- Monitoring Çözümleri
+- SIEM Entegrasyonu
+- Azure AD Hybrid Yapısı
+
+
+
+## Yazar
+Furkan Sirdas
